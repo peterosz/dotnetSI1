@@ -8,10 +8,17 @@ namespace CreateClass
         public enum Genders { Male, Female };
 
         public string Name { get; set; }
-        public int BirthDate { get; set; }
+        public DateTime BirthDate { get; set; }
         public Genders Gender { get; set; }
 
         public Person() { }
+
+        public Person(string Name, DateTime BirthDate, Genders Gender)
+        {
+            this.Name = Name;
+            this.BirthDate = BirthDate;
+            this.Gender = Gender;
+        }
 
         public override string ToString()
         {

@@ -11,5 +11,9 @@ namespace CreateClass
         public int RoomNumber { get; set; }
 
         public Room() { }
+
+        public Room(int Number) {
+            this.RoomNumber = Number;
+        }
     }
 }
