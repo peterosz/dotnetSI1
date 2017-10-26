@@ -23,7 +23,7 @@ namespace CreateClass
         public override string ToString()
         {
             return "\n Name: " + Name +
-                   "\n Date of Birth: " + BirthDate +
+                   "\n Date of Birth: " + BirthDate.ToString("yyyy/MM/dd") +
                    "\n Gender: " + Gender;
         }
     }
